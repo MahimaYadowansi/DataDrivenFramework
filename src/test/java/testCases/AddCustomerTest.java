@@ -1,21 +1,35 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestBase;
 
-public class AddCustomerTest extends TestBase {
 @Test(dataProvider="getData")
-	public void addCustomer(String FirstName, String LastName,String PostCode)
-	{
-	driver.findElement(By.xpath(Or.getProperty("addCustBtn"))).click();	
+public class AddCustomerTest extends TestBase {
+public void addCustomer(String FirstName, String LastName,String PostCode)
+	{ 
+	 
+	
+	driver.findElement(By.xpath(Or.getProperty("addCustBtns"))).click();	
+	
 	driver.findElement(By.xpath(Or.getProperty("firstName"))).sendKeys(FirstName);
 	driver.findElement(By.xpath(Or.getProperty("lastName"))).sendKeys( LastName);
 	driver.findElement(By.xpath(Or.getProperty("postCode"))).sendKeys( PostCode);
 	driver.findElement(By.xpath(Or.getProperty("addCustomer"))).click();	
 	}
+
+
+	
 @DataProvider
 public Object[][] getData()
 {

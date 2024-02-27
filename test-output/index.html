@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Data_Driven_Basics">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Data_Driven_Basics" title="testCases.AddCustomerTest" class="method navigator-link" hash-for-method="addCustomer">addCustomer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Data_Driven_Basics" title="testCases.AddCustomerTest" class="method navigator-link" hash-for-method="addCustomer(FirstName, LastName, PostCode)">addCustomer(FirstName, LastName, PostCode)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Data_Driven_Basics" title="testCases.AddCustomerTest" class="method navigator-link" hash-for-method="addCustomer(Sneha, Yadav, A24DG)">addCustomer(Sneha, Yadav, A24DG)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Data_Driven_Basics -->
@@ -140,19 +145,33 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCustomer">
-                  </a> <!-- addCustomer -->
+                  <a name="addCustomer(FirstName, LastName, PostCode)">
+                  </a> <!-- addCustomer(FirstName, LastName, PostCode) -->
                   <span class="method-name">addCustomer</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.IllegalArgumentException: Cell index must be &gt;= 0
+                  <span class="parameters">(FirstName,LastName,PostCode)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:286)
+	at org.openqa.selenium.By.xpath(By.java:89)
+	at testCases.AddCustomerTest.addCustomer(AddCustomerTest.java:23)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.IllegalArgumentException: Cell index must be &gt;= 0
-	at org.apache.poi.xssf.usermodel.XSSFRow.getCell(XSSFRow.java:280)
-	at org.apache.poi.xssf.usermodel.XSSFRow.getCell(XSSFRow.java:268)
-	at org.apache.poi.xssf.usermodel.XSSFRow.getCell(XSSFRow.java:50)
-	at utilities.ExcelReader.getCellData(ExcelReader.java:52)
-	at testCases.AddCustomerTest.getData(AddCustomerTest.java:31)
-	... 25 more
-... Removed 30 stack frames
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomer(Sneha, Yadav, A24DG)">
+                  </a> <!-- addCustomer(Sneha, Yadav, A24DG) -->
+                  <span class="method-name">addCustomer</span>
+                  <span class="parameters">(Sneha,Yadav,A24DG)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:286)
+	at org.openqa.selenium.By.xpath(By.java:89)
+	at testCases.AddCustomerTest.addCustomer(AddCustomerTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -235,15 +254,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAsBankManager')
 data.setCell(0, 2, 'testCases.BankManagerLoginTest')
-data.setCell(0, 3, 7162);
+data.setCell(0, 3, 7259);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addCustomer')
 data.setCell(1, 2, 'testCases.AddCustomerTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 5);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCustomer')
+data.setCell(2, 2, 'testCases.AddCustomerTest')
+data.setCell(2, 3, 3);
 window.suiteTableData['Data_Driven_Basics']= { tableData: data, tableDiv: 'times-div-Data_Driven_Basics'}
 return data;
 }
@@ -269,13 +292,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">base.TestBase</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -297,14 +320,26 @@ return data;
               <div class="chronological-class-name">testCases.BankManagerLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginAsBankManager</span>
-                <span class="method-start">8840 ms</span>
+                <span class="method-start">7911 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addCustomer(FirstName, LastName, PostCode)</span>
+                <span class="method-start">15243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addCustomer(Sneha, Yadav, A24DG)</span>
+                <span class="method-start">15256 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16084 ms</span>
+                <span class="method-start">15281 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

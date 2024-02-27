@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.AddCustomerTest">
         <methods>
-          <include name="addCustomer"/>
+          <include name="addCustomer" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

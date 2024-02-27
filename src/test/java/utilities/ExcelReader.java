@@ -49,7 +49,7 @@ public int getColumnCount(String sheetName) {
 public Object getCellData(String sheetName, int colNum, int rowNum) {
 	 sheet = workbook.getSheet(sheetName);
 	 Row row = sheet.getRow(rowNum - 2); // Adjust row index (assuming 1-based index)
-	 Cell cell = row.getCell(colNum - 1); // Adjust column index (assuming 1-based index)
+	 Cell cell = row.getCell(colNum ); // Adjust column index (assuming 1-based index)
 
      if (cell != null) {
          switch (cell.getCellType()) {
