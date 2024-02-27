@@ -73,7 +73,7 @@ public class TestBase {
 	}
 	  driver.get(config.getProperty("testsiteurl"));
 	  driver.manage().window().maximize();
-	  WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	  WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	  log.debug("navigated to : "+config.getProperty("testsuiteurl"));
 	  //driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 	}

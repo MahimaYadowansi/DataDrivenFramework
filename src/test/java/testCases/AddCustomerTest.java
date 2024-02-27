@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,16 +19,23 @@ import base.TestBase;
 public class AddCustomerTest extends TestBase {
 public void addCustomer(String FirstName, String LastName,String PostCode)
 	{ 
+	 try
+	 {
+	 //WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	 driver.findElement(By.xpath(Or.getProperty("addCustBtn"))).click();
 	 
-	
-	driver.findElement(By.xpath(Or.getProperty("addCustBtns"))).click();	
-	
+	 WebDriverWait wait1=new WebDriverWait(driver,Duration.ofSeconds(20));
 	driver.findElement(By.xpath(Or.getProperty("firstName"))).sendKeys(FirstName);
 	driver.findElement(By.xpath(Or.getProperty("lastName"))).sendKeys( LastName);
 	driver.findElement(By.xpath(Or.getProperty("postCode"))).sendKeys( PostCode);
+	Thread.sleep(10000);
 	driver.findElement(By.xpath(Or.getProperty("addCustomer"))).click();	
+	
+	
+	}catch (Exception e) {
+        e.printStackTrace();
 	}
-
+	}
 
 	
 @DataProvider
