@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Basics">
+	<test name="BankManagerLoginTest">
+		<classes>
+			<class name="testCases.BankManagerLoginTest" />
+			<class name="base.TestBase" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="AddCustomerTest">
+		<classes>
+			<class name="testCases.AddCustomerTest" />
+			<class name="base.TestBase" />
+		</classes>
+	</test>
+
+</suite> <!--
+Suite -->
