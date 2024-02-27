@@ -39,6 +39,8 @@ public class TestBase {
 	public static FileInputStream fis1;
 	public static org.apache.logging.log4j.Logger log= LogManager.getLogger("devpinoyLogger");
 	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
+	public static WebDriverWait wait;
+	
 	@BeforeSuite
 	public void setup() throws IOException, InterruptedException {
 	if(driver==null)
@@ -73,9 +75,10 @@ public class TestBase {
 	}
 	  driver.get(config.getProperty("testsiteurl"));
 	  driver.manage().window().maximize();
-	  WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+	  wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	  log.debug("navigated to : "+config.getProperty("testsuiteurl"));
 	  //driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+	  wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	}
 public boolean isElementPresent(By by)
 {
