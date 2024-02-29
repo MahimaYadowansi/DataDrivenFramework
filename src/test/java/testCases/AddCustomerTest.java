@@ -38,7 +38,6 @@ public void addCustomer(String FirstName, String LastName,String PostCode, Strin
 	Thread.sleep(5000);
 	alert.accept();
 	
-	
 	}catch (Exception e) {
         e.printStackTrace();
 	}

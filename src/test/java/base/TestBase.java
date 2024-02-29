@@ -5,7 +5,6 @@ import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 
-import org.apache.logging.log4j.core.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,9 +15,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelReader;
-
+import utilities.ExtentManager;
 public class TestBase {
 
 	/* initilizing
@@ -40,6 +42,9 @@ public class TestBase {
 	public static org.apache.logging.log4j.Logger log= LogManager.getLogger("devpinoyLogger");
 	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
+	public ExtentReports report=ExtentManager.getInstance();
+	public static ExtentTest test;
+	
 	
 	@BeforeSuite
 	public void setup() throws IOException, InterruptedException {

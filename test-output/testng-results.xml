@@ -1,49 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Login successfully executed]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="file://C:/Users/AMIT/eclipse-workspace/DataDrivenFramework/src/test/resources/ScreenshotImage/Failed.jpg">Screenshot</a>]]>
+      <![CDATA[click to see screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="blank" href=Wed_Feb_28_20_31_08_IST_2024.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="file://C:/Users/AMIT/eclipse-workspace/DataDrivenFramework/src/test/resources/ScreenshotImage/Failed.jpg"><img height=400 width=400 src="file://C:/Users/AMIT/eclipse-workspace/DataDrivenFramework/src/test/resources/ScreenshotImage/Failed.jpg "></img></a>]]>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-02-27T20:41:31 IST" name="Data Driven Basics" finished-at="2024-02-27T20:41:38 IST" duration-ms="7549">
+  <suite started-at="2024-02-28T20:31:00 IST" name="Data Driven Basics" finished-at="2024-02-28T20:31:09 IST" duration-ms="8526">
     <groups>
     </groups>
-    <test started-at="2024-02-27T20:41:31 IST" name="BankManagerLoginTest" finished-at="2024-02-27T20:41:38 IST" duration-ms="7264">
+    <test started-at="2024-02-28T20:31:00 IST" name="BankManagerLoginTest" finished-at="2024-02-28T20:31:08 IST" duration-ms="8129">
       <class name="testCases.BankManagerLoginTest">
-        <test-method signature="loginAsBankManager()[pri:0, instance:testCases.BankManagerLoginTest@63a5d002]" started-at="2024-02-27T20:41:31 IST" name="loginAsBankManager" finished-at="2024-02-27T20:41:38 IST" duration-ms="7179" status="PASS">
+        <test-method signature="loginAsBankManager()[pri:0, instance:testCases.BankManagerLoginTest@63da207f]" started-at="2024-02-28T20:31:00 IST" name="loginAsBankManager" finished-at="2024-02-28T20:31:07 IST" duration-ms="7125" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[login not successful]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: login not successful
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Login successfully executed]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="file://C:/Users/AMIT/eclipse-workspace/DataDrivenFramework/src/test/resources/ScreenshotImage/Failed.jpg">Screenshot</a>]]>
+              <![CDATA[click to see screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="blank" href=Wed_Feb_28_20_31_08_IST_2024.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="file://C:/Users/AMIT/eclipse-workspace/DataDrivenFramework/src/test/resources/ScreenshotImage/Failed.jpg"><img height=400 width=400 src="file://C:/Users/AMIT/eclipse-workspace/DataDrivenFramework/src/test/resources/ScreenshotImage/Failed.jpg "></img></a>]]>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- testCases.BankManagerLoginTest -->
     </test> <!-- BankManagerLoginTest -->
-    <test started-at="2024-02-27T20:41:38 IST" name="AddCustomerTest" finished-at="2024-02-27T20:41:38 IST" duration-ms="250">
+    <test started-at="2024-02-28T20:31:08 IST" name="AddCustomerTest" finished-at="2024-02-28T20:31:09 IST" duration-ms="366">
       <class name="testCases.AddCustomerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCustomerTest@1adb7478]" started-at="2024-02-27T20:41:20 IST" name="setup" finished-at="2024-02-27T20:41:31 IST" duration-ms="10839" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AddCustomerTest@3b08f438]" started-at="2024-02-28T20:30:49 IST" name="setup" finished-at="2024-02-28T20:31:00 IST" duration-ms="11241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@1adb7478]" started-at="2024-02-27T20:41:38 IST" name="addCustomer" data-provider="getData" finished-at="2024-02-27T20:41:38 IST" duration-ms="93" status="PASS">
+        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@3b08f438]" started-at="2024-02-28T20:31:08 IST" name="addCustomer" data-provider="getData" finished-at="2024-02-28T20:31:08 IST" duration-ms="87" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +118,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@1adb7478]" started-at="2024-02-27T20:41:38 IST" name="addCustomer" data-provider="getData" finished-at="2024-02-27T20:41:38 IST" duration-ms="61" status="PASS">
+        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@3b08f438]" started-at="2024-02-28T20:31:08 IST" name="addCustomer" data-provider="getData" finished-at="2024-02-28T20:31:09 IST" duration-ms="80" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +144,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@1adb7478]" started-at="2024-02-27T20:41:38 IST" name="addCustomer" data-provider="getData" finished-at="2024-02-27T20:41:38 IST" duration-ms="67" status="PASS">
+        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@3b08f438]" started-at="2024-02-28T20:31:09 IST" name="addCustomer" data-provider="getData" finished-at="2024-02-28T20:31:09 IST" duration-ms="67" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +170,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AddCustomerTest@1adb7478]" started-at="2024-02-27T20:41:38 IST" name="tearDown" finished-at="2024-02-27T20:41:39 IST" duration-ms="815" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AddCustomerTest@3b08f438]" started-at="2024-02-28T20:31:09 IST" name="tearDown" finished-at="2024-02-28T20:31:10 IST" duration-ms="847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

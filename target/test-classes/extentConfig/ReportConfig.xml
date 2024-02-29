@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme standard,dark -->
+		<theme>Standard</theme>
+	
+		<!-- default to UtF-8 -->
+		<encoding> UTF-8</encoding>
+		
+		<!-- protocal for script and Stylesheets -->
+		<!-- default to https-->
+		<protocol> https</protocol>
+		
+		<!-- title of the document -->
+		<documentTitle> Automation Reports</documentTitle>
+		
+		<!-- report name displayed to top -->
+		<reportName> Automation Report for</reportName>
+		
+		<!-- report haedline displayed at top,after reportHeadline -->
+		<reportHeadline> Data Driven Framework</reportHeadline>
+		
+		<!-- global date format override -->
+		<dateFormat>YYYY-MM-dd</dateFormat>
+		
+		<!-- global time format override -->
+		<timeFormat> HH:mm:ss</timeFormat>
+		
+		<!-- custom javascript -->
+		<script>
+			<![CDATA[
+			$(document).ready(function() {
+			});
+			 ]]>
+		</script>
+		
+		<!-- custom style -->
+		<styles>
+			<![CDATA[
+			
+			 ]]>
+		</styles>
+	</configuration>
+</extentreports>
