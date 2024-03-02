@@ -15,19 +15,30 @@ public class ExtentManager {
 			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportFilePath);
 
 			// Load configuration settings from XML file
-			// loadSparkReporterConfig(sparkReporter,"src/test/resources/extentConfig/ReportConfig.xml"
+			
+			loadSparkReporterConfig(sparkReporter,"src/test/resources/extentConfig/ReportConfig.xml");
+			
 			// Optional: Configure SparkReporter settings
-			sparkReporter.config().setDocumentTitle("ExtentReports - Test Automation Report");
-			sparkReporter.config().setReportName("Test Execution Report");
-			sparkReporter.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.STANDARD);
+			
+			//sparkReporter.config().setDocumentTitle("ExtentReports - Test Automation Report");
+			//sparkReporter.config().setReportName("Test Execution Report");
+			//sparkReporter.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.STANDARD);
 
 			extent = new ExtentReports();
-
 			// Attach the SparkReporter to the ExtentReports instance
 
 			extent.attachReporter(new ExtentSparkReporter(reportFilePath));
 		}
 		return extent;
+	}
+
+	private static ExtentSparkReporter loadSparkReporterConfig(ExtentSparkReporter sparkReporter, String configFilePath) {
+		 try {
+	            sparkReporter.loadXMLConfig("src/test/resources/extentConfig/ReportConfig.xml");
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+		 return sparkReporter; 
 	}
 
 }

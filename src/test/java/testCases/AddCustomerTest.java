@@ -17,22 +17,32 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestBase;
+import utilities.TestUtil;
 
-@Test(dataProvider="getData")
+@Test(dataProviderClass=TestUtil.class,dataProvider="dp")
 public class AddCustomerTest extends TestBase {
-public void addCustomer(String FirstName, String LastName,String PostCode, String alertText)
+public void addCustomerTest(String FirstName, String LastName,String PostCode, String alertText)
 	{ 
 	 try
 	 {
 	 //WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-	 driver.findElement(By.xpath(Or.getProperty("addCustBtn"))).click();
+	// driver.findElement(By.xpath(Or.getProperty("addCustBtn"))).click();
+		 click("addCustBtn");
 	 
 	 WebDriverWait wait1=new WebDriverWait(driver,Duration.ofSeconds(20));
-	driver.findElement(By.xpath(Or.getProperty("firstName"))).sendKeys(FirstName);
-	driver.findElement(By.xpath(Or.getProperty("lastName"))).sendKeys( LastName);
-	driver.findElement(By.xpath(Or.getProperty("postCode"))).sendKeys( PostCode);
+	//driver.findElement(By.xpath(Or.getProperty("firstName"))).sendKeys(FirstName);
+	 type("firstName",FirstName);
+	 
+	//driver.findElement(By.xpath(Or.getProperty("lastName"))).sendKeys( LastName);
+	 type("lastName",LastName);
+	 
+	//driver.findElement(By.xpath(Or.getProperty("postCode"))).sendKeys( PostCode);
+	 type("postCode",PostCode);
+	 
 	Thread.sleep(10000);
-	driver.findElement(By.xpath(Or.getProperty("addCustomer"))).click();	
+	//driver.findElement(By.xpath(Or.getProperty("addCustomer"))).click();
+	click("addCustomer");
+	
 	Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 	Assert.assertTrue(alert.getText().contains(alertText));
 	Thread.sleep(5000);
@@ -44,23 +54,7 @@ public void addCustomer(String FirstName, String LastName,String PostCode, Strin
 	}
 
 	
-@DataProvider
-public Object[][] getData()
-{
-	String sheetName="AddCustomerTest";
-	int rows=excel.getRowCount(sheetName);
-	int cols=excel.getColumnCount(sheetName);
-	Object[][] data=new Object[rows-1][cols];
-	for(int rowNum=2;rowNum<=rows;rowNum++)
-	{
-		for(int colNum=0;colNum<cols;colNum++)
-		{
-			//data[0][0]
-			data[rowNum-2][colNum]=excel.getCellData(sheetName,colNum,rowNum);
-		}
-	}
-	return data;
-	
-}
+
+
 
 }

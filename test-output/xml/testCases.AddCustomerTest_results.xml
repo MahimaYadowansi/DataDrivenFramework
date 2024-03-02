@@ -8,8 +8,8 @@
   <properties />
   
   
-            <testcase name="addCustomer" time="0.087" classname="testCases.AddCustomerTest" />
-                <testcase name="addCustomer" time="0.067" classname="testCases.AddCustomerTest" />
-                <testcase name="addCustomer" time="0.080" classname="testCases.AddCustomerTest" />
+            <testcase name="addCustomerTest" time="0.064" classname="testCases.AddCustomerTest" />
+                <testcase name="addCustomerTest" time="0.078" classname="testCases.AddCustomerTest" />
+                <testcase name="addCustomerTest" time="0.092" classname="testCases.AddCustomerTest" />
       
 </testsuite>

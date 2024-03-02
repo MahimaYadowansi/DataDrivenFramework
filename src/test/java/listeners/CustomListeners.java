@@ -1,26 +1,32 @@
 package listeners;
 
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.Reporter;
-import com.aventstack.extentreports.Status;
-
-
-import base.TestBase;
-import utilities.TestUtil;
-
 import java.io.IOException;
 
 import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.SkipException;
+
+import java.*;
+import com.aventstack.extentreports.Status;
+
+import base.TestBase;
+import utilities.TestUtil;
 
 public class CustomListeners extends TestBase implements ITestListener {
 	public void onFinish(ITestContext result) {
 		System.out.println("The test finished");
 	}
-
+/*
 	public void onStart(ITestContext result) {
-		System.out.println("The test Started");
-	}
+		
+		//Check runMode is YES or NO
+		if(!TestUtil.isTestRunnable(result.getName(), excel))
+		{
+			throw new SkipException("Skipping the test as"+result.getName().toUpperCase()+" runmode is NO");
+		}
+	}*/
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		System.out.println("Test Failed But Within Success Percentage");
@@ -38,7 +44,7 @@ public class CustomListeners extends TestBase implements ITestListener {
 
 		
 		  test.log(Status.FAIL, result.getName().toUpperCase() + "Failed with exception:" + result.getThrowable());
-		  test.log(Status.FAIL, "Screenshot below:").addScreenCaptureFromPath(TestUtil.screenshotName);
+		  test.log(Status.FAIL, "Screenshot above:").addScreenCaptureFromPath(TestUtil.screenshotName);
 		
 		
 		Reporter.log("click to see screenshot");

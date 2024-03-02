@@ -48,7 +48,7 @@ public int getColumnCount(String sheetName) {
 
 public Object getCellData(String sheetName, int colNum, int rowNum) {
 	 sheet = workbook.getSheet(sheetName);
-	 Row row = sheet.getRow(rowNum - 2); // Adjust row index (assuming 1-based index)
+	 Row row = sheet.getRow(rowNum -2); // Adjust row index (assuming 1-based index)
 	 Cell cell = row.getCell(colNum ); // Adjust column index (assuming 1-based index)
 
      if (cell != null) {
@@ -76,4 +76,22 @@ public Object getCellData(String sheetName, int colNum, int rowNum) {
          return null;
      }
 }
+/*
+public String getCellData(String sheetName, String string, int rowNum) {
+	 sheet = workbook.getSheet(sheetName);
+	 Row row = sheet.getRow(rowNum - 2);
+	 int columnIndex = getColumnIndex(sheet, TCID);
+	return null;
+	 if (cell != null) {
+	        switch (cell.getCellType()) {
+	            case STRING:
+	                return cell.getStringCellValue();
+	            case NUMERIC:
+	                return String.valueOf(cell.getNumericCellValue());
+	            // Add cases for other cell types as needed
+	            default:
+	                return null;
+	        }
+	    }
+}*/
 }
