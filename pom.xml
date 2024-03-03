@@ -122,6 +122,12 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
 
 	<build>
 
@@ -139,7 +145,7 @@
 			</plugin>
 
 		</plugins>
-		
+
 		<testResources>
 			<testResource>
 				<directory>src/test/resources/properties</directory>
@@ -148,7 +154,7 @@
 				</includes>
 			</testResource>
 		</testResources>
-		
-		
+
+
 	</build>
 </project>
