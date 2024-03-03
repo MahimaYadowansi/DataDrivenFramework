@@ -27,16 +27,29 @@ public class TestUtil extends TestBase {
 	@DataProvider(name="dp")
 	public Object[][] getData(Method m) {
 		String sheetName = m.getName();
-		int rows = excel.getRowCount(sheetName);
-		int cols = excel.getColumnCount(sheetName);
+		int rows = excel.getRowCount(sheetName);  // 4
+		int cols = excel.getColumnCount(sheetName);  // 4
+		
+		System.out.println(rows+" --- "+cols+" ___ "+sheetName);
 		Object[][] data = new Object[rows - 1][cols];
-		for (int rowNum = 2; rowNum <= rows; rowNum++) {
+		for (int rowNum = 1; rowNum < rows; rowNum++) {
 			for (int colNum = 0; colNum < cols; colNum++) {
 				// data[0][0]
-				data[rowNum -2][colNum] = excel.getCellData(sheetName, colNum, rowNum);
+				System.out.println("rowNum"+rowNum+"colNum"+colNum);
+				data[rowNum-1][colNum] = excel.getCellData(sheetName, colNum, rowNum);
+				
 			}
 		
 		}
+		//to see output
+		System.out.println("-----");
+		for (int i=0; i<rows-1;i++ ) {
+			for(int j=0; j< cols;j++) {
+				System.out.print(data[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
 		
 		return data;
 	}
@@ -46,18 +59,28 @@ public class TestUtil extends TestBase {
 	{
 		String SheetName="TestSuite";
 		int rows=excel.getRowCount(SheetName);
-		for(int rowNum=2;rowNum<=rows;rowNum++)
+		int cols=excel.getColumnCount(SheetName);
+		System.out.println(rows+ " "+cols+"------"+SheetName);
+		
+		for(int rNum=1;rNum<rows;rNum++)
 		{
-			String testcase=excel.getCellData(SheetName,"TCID", rowNum);
-			 if (testcase != null && testcase.equalsIgnoreCase(testName)) {
-		            String runMode = excel.getCellData(SheetName, "RunMode", rowNum);
-		            if (runMode != null && runMode.equalsIgnoreCase("Y")) {
-		                return true;
-					
+			
+			String testcase=(String) excel.getCellData(SheetName, "TCID", rNum);
+			if(testcase.equalsIgnoreCase(testcase))
+			{
+				String RunMode=(String) excel.getCellData(SheetName, "RunMode", rNum);
+				if(RunMode.equalsIgnoreCase("y"))
+				{
+					return true;
+				}
+				else
+				{
+					return false;
 				}
 			}
-			
 		}
-		return false;
-	}*/
+		
+	return false;
+	
+}*/
 }

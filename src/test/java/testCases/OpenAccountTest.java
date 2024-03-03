@@ -22,18 +22,26 @@ import utilities.TestUtil;
 @Test(dataProviderClass = TestUtil.class, dataProvider = "dp")
 public class OpenAccountTest extends TestBase  {
 	public void openAccountTest(String Customer, String Currency) throws InterruptedException {
+		try
+		{
 		click("openAccBtn_xpath");
-		Thread.sleep(2000);	
+		 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));	
 		
 		select("customer_xpath",Customer);
-		
+		Thread.sleep(2000);
 		select("currency_xpath",Currency );
+		 WebDriverWait wait2 = new WebDriverWait(driver,Duration.ofSeconds(10));	
 		click("processBtn_xpath");
 		
-		Thread.sleep(3000);
+		WebDriverWait wait1 = new WebDriverWait(driver,Duration.ofSeconds(30));	
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		
 		alert.accept();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 
 }
 

@@ -1,61 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="4" failed="3" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Login successfully executed]]>
     </line>
-    <line>
-      <![CDATA[click to see screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href=Fri_Mar_01_20_19_06_IST_2024.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[click to see screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href=Fri_Mar_01_20_19_08_IST_2024.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[click to see screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href=Fri_Mar_01_20_19_11_IST_2024.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-03-01T20:18:55 IST" name="Data Driven Basics" finished-at="2024-03-01T20:19:11 IST" duration-ms="15761">
+  <suite started-at="2024-03-03T11:19:12 IST" name="Data Driven Basics" finished-at="2024-03-03T11:20:32 IST" duration-ms="80230">
     <groups>
     </groups>
-    <test started-at="2024-03-01T20:18:55 IST" name="BankManagerLoginTest" finished-at="2024-03-01T20:19:03 IST" duration-ms="7843">
+    <test started-at="2024-03-03T11:19:12 IST" name="BankManagerLoginTest" finished-at="2024-03-03T11:19:21 IST" duration-ms="9114">
       <class name="testCases.BankManagerLoginTest">
-        <test-method signature="bankManagerLoginTest()[pri:0, instance:testCases.BankManagerLoginTest@2a9bc08f]" started-at="2024-03-01T20:18:55 IST" name="bankManagerLoginTest" finished-at="2024-03-01T20:19:02 IST" duration-ms="7177" status="PASS">
+        <test-method signature="bankManagerLoginTest()[pri:0, instance:testCases.BankManagerLoginTest@2a9bc08f]" started-at="2024-03-03T11:19:12 IST" name="bankManagerLoginTest" finished-at="2024-03-03T11:19:20 IST" duration-ms="7821" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login successfully executed]]>
@@ -64,35 +19,9 @@
         </test-method> <!-- bankManagerLoginTest -->
       </class> <!-- testCases.BankManagerLoginTest -->
     </test> <!-- BankManagerLoginTest -->
-    <test started-at="2024-03-01T20:19:03 IST" name="AddCustomerTest" finished-at="2024-03-01T20:19:04 IST" duration-ms="370">
+    <test started-at="2024-03-03T11:19:21 IST" name="AddCustomerTest" finished-at="2024-03-03T11:19:53 IST" duration-ms="32517">
       <class name="testCases.AddCustomerTest">
-        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@14bf57b2]" started-at="2024-03-01T20:19:03 IST" name="addCustomerTest" data-provider="dp" finished-at="2024-03-01T20:19:03 IST" duration-ms="92" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FirstName]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[LastName]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[PostCode]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[AlertText]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCustomerTest -->
-        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@14bf57b2]" started-at="2024-03-01T20:19:03 IST" name="addCustomerTest" data-provider="dp" finished-at="2024-03-01T20:19:03 IST" duration-ms="78" status="PASS">
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@14bf57b2]" started-at="2024-03-03T11:19:21 IST" name="addCustomerTest" data-provider="dp" finished-at="2024-03-03T11:19:21 IST" duration-ms="477" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomerTest -->
-        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@14bf57b2]" started-at="2024-03-01T20:19:03 IST" name="addCustomerTest" data-provider="dp" finished-at="2024-03-01T20:19:03 IST" duration-ms="64" status="PASS">
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@14bf57b2]" started-at="2024-03-03T11:19:21 IST" name="addCustomerTest" data-provider="dp" finished-at="2024-03-03T11:19:38 IST" duration-ms="16190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,86 +73,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomerTest -->
-      </class> <!-- testCases.AddCustomerTest -->
-    </test> <!-- AddCustomerTest -->
-    <test started-at="2024-03-01T20:19:04 IST" name="OpenAccountTest" finished-at="2024-03-01T20:19:11 IST" duration-ms="7512">
-      <class name="testCases.OpenAccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-01T20:18:45 IST" name="setup" finished-at="2024-03-01T20:18:55 IST" duration-ms="10088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-01T20:19:04 IST" name="openAccountTest" data-provider="dp" finished-at="2024-03-01T20:19:06 IST" duration-ms="2254" status="FAIL">
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AddCustomerTest@14bf57b2]" started-at="2024-03-03T11:19:38 IST" name="addCustomerTest" data-provider="dp" finished-at="2024-03-03T11:19:53 IST" duration-ms="15441" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Customer]]>
+                <![CDATA[Amit]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Currency]]>
+                <![CDATA[yadav]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[W9hk]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer added successfully ]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-at org.openqa.selenium.By$ByXPath.<init>(By.java:286)
-at org.openqa.selenium.By.xpath(By.java:89)
-at base.TestBase.click(TestBase.java:97)
-at testCases.OpenAccountTest.openAccountTest(OpenAccountTest.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
-            <line>
-              <![CDATA[click to see screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="blank" href=Fri_Mar_01_20_19_06_IST_2024.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- openAccountTest -->
-        <test-method signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-01T20:19:06 IST" name="openAccountTest" data-provider="dp" finished-at="2024-03-01T20:19:08 IST" duration-ms="2233" status="FAIL">
+        </test-method> <!-- addCustomerTest -->
+      </class> <!-- testCases.AddCustomerTest -->
+    </test> <!-- AddCustomerTest -->
+    <test started-at="2024-03-03T11:19:53 IST" name="OpenAccountTest" finished-at="2024-03-03T11:20:32 IST" duration-ms="38477">
+      <class name="testCases.OpenAccountTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-03T11:18:36 IST" name="setup" finished-at="2024-03-03T11:19:12 IST" duration-ms="35470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-03T11:19:53 IST" name="openAccountTest" data-provider="dp" finished-at="2024-03-03T11:20:06 IST" duration-ms="12570" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,65 +120,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-at org.openqa.selenium.By$ByXPath.<init>(By.java:286)
-at org.openqa.selenium.By.xpath(By.java:89)
-at base.TestBase.click(TestBase.java:97)
-at testCases.OpenAccountTest.openAccountTest(OpenAccountTest.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
-            <line>
-              <![CDATA[click to see screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="blank" href=Fri_Mar_01_20_19_08_IST_2024.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openAccountTest -->
-        <test-method signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-01T20:19:09 IST" name="openAccountTest" data-provider="dp" finished-at="2024-03-01T20:19:11 IST" duration-ms="2207" status="FAIL">
+        <test-method signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-03T11:20:06 IST" name="openAccountTest" data-provider="dp" finished-at="2024-03-03T11:20:19 IST" duration-ms="12660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -307,65 +136,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.internal.Require$ArgumentChecker.nonNull(Require.java:207)
-at org.openqa.selenium.By$ByXPath.<init>(By.java:286)
-at org.openqa.selenium.By.xpath(By.java:89)
-at base.TestBase.click(TestBase.java:97)
-at testCases.OpenAccountTest.openAccountTest(OpenAccountTest.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
-            <line>
-              <![CDATA[click to see screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="blank" href=Fri_Mar_01_20_19_11_IST_2024.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="blank" href="+TestUtil.screenshotName+"><img height=200 width=200 src="+TestUtil.screenshotName+"  ></img></a>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openAccountTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-01T20:19:11 IST" name="tearDown" finished-at="2024-03-01T20:19:12 IST" duration-ms="921" status="PASS">
+        <test-method signature="openAccountTest(java.lang.String,java.lang.String)[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-03T11:20:19 IST" name="openAccountTest" data-provider="dp" finished-at="2024-03-03T11:20:32 IST" duration-ms="12761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit yadav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dollar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.OpenAccountTest@345cf395]" started-at="2024-03-03T11:20:32 IST" name="tearDown" finished-at="2024-03-03T11:20:33 IST" duration-ms="924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
